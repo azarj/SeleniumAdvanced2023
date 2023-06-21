@@ -10,7 +10,7 @@ namespace SeleniumAdvanced.Tests
             var dashboardPage = LoginPage.Login();
 
             //dashboard page navigate to hotels
-            var hmp = dashboardPage.NavigateTo<HotelManagementPage>("Hotels","Hotels");
+            var hmp = dashboardPage.menuItemControl.NavigateTo<HotelManagementPage>("Hotels","Hotels");
         }
 
     }
