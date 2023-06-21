@@ -1,3 +1,5 @@
+using SeleniumAdvanced.Framework.Pages;
+
 namespace SeleniumAdvanced.Tests
 {
     public class HotelTests : TestBase
@@ -5,13 +7,11 @@ namespace SeleniumAdvanced.Tests
         [Fact]
         public void AddAndDeleteHotel()
         {
+            var dashboardPage = LoginPage.Login();
 
+            //dashboard page navigate to hotels
+            var hmp = dashboardPage.NavigateTo<HotelManagementPage>("Hotels","Hotels");
         }
 
-        [Fact]
-        public void AddAndDeleteHotel2()
-        {
-
-        }
     }
 }

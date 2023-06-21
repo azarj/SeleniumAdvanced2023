@@ -4,7 +4,7 @@ using System;
 
 namespace SeleniumAdvanced.Framework.Browser
 {
-    public class Browser
+    public class BrowserInit
     {
         public static IWebDriver Instance { get; set; }
 

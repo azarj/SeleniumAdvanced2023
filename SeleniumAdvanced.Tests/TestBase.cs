@@ -10,8 +10,8 @@ namespace SeleniumAdvanced.Tests
         //contstructor instead of TestInitialize
         public TestBase()
         {
-            Browser.StartBrowser(BrowserType.Chrome);
-            Browser.Instance.Navigate().GoToUrl("https://www.phptravels.net/api/admin");
+            BrowserInit.StartBrowser(BrowserType.Chrome);
+            BrowserInit.Instance.Navigate().GoToUrl("https://phptravels.net/admin/login.php");
 
             LoginPage = new LoginPage();
         }
@@ -19,7 +19,7 @@ namespace SeleniumAdvanced.Tests
         //Dispose() instead of TestCleanup
         public void Dispose()
         {
-            Browser.Instance.Quit();
+            BrowserInit.Instance.Quit();
         }
     }
 }
