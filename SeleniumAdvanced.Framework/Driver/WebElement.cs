@@ -32,6 +32,10 @@ namespace SeleniumAdvanced.Framework.Driver
             return (T)page;
         }
 
-
+        public static void PerformJsClick(this IWebElement element)
+        {
+            var js = (Browser.BrowserInit.Instance as IJavaScriptExecutor);
+            js.ExecuteScript("arguments[0].click()", element);
+        }
     }
 }

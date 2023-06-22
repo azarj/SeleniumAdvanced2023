@@ -1,7 +1,5 @@
 ﻿using OpenQA.Selenium;
-using SeleniumAdvanced.Framework.Browser;
 using SeleniumAdvanced.Framework.Driver;
-using System.ComponentModel;
 
 namespace SeleniumAdvanced.Framework.Pages
 {
@@ -13,11 +11,6 @@ namespace SeleniumAdvanced.Framework.Pages
 
         public DashboardPage Login(string username = "admin@phptravels.com", string password = "demoadmin")
         {
-            //TxtUsername.SendKeys(username);
-            //TxtPassword.SendKeys(password);
-
-            //BtnLogin.Click();
-            //return new DashboardPage();
             TxtUsername.PerformSendKeys(username);
             TxtPassword.PerformSendKeys(password);
             return BtnLogin.NavigateToPage<DashboardPage>();

@@ -1,6 +1,7 @@
 ﻿namespace SeleniumAdvanced.Framework.Pages
 {
-    public class DashboardPage : BaseWebPage
+    public class FlightsManagementPage : BaseManagementPage
     {
+
     }
 }

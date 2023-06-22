@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System;
 
 namespace SeleniumAdvanced.Framework.Browser
 {
@@ -52,7 +51,7 @@ namespace SeleniumAdvanced.Framework.Browser
                     //Log.Info($"Saving file: {fileName} attempt {attemptNo}");
                 } while (!success && attemptNo < 5);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //Log.Error($"Cannot save screenshot for: {fileName},/n because of error: {ex.Message}");
             }
